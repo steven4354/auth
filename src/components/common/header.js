@@ -3,7 +3,7 @@ import React from 'react';
 import { Text, View } from 'react-native';
 
 //Make the Component
-const Header = (props) => {
+const Header = props => {
   return (
     <View style={styles.viewStyle}>
       <Text style={styles.texStyle}>{props.headerText}</Text>
@@ -24,9 +24,9 @@ const styles = {
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.2,
-    elevation: 2,
+    elevation: 2
   }
 };
 
 //export
-export default Header;
+export { Header };
